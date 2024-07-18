@@ -30,6 +30,37 @@ This is a Node.js and Express backend project that facilitates moonshot swap tra
 
 3. Update the `config.ts` file with any additional configuration settings as needed.
 
+## Usage
+
+### Starting the Project
+To start the project, run:
+```bash
+npm start
+```
+or
+```bash
+yarn start
+```
+
+The project will run at:
+```
+http://localhost:9000
+```
+
+### Swap Endpoint
+The swap endpoint is available at:
+```
+http://localhost:9000/api/moonshot/swap
+```
+
+### Creating Transactions
+To create a transaction, use the following parameters:
+
+- `mintAddress`: Token mint address for buying/selling.
+- `amount`: When buying, input SOL amount; when selling, omit this value.
+- `tradeDirection`: Use `"BUY"` for buying and `"SELL"` for selling.
+- `slippageBps`: Default is `100` and can be omitted.
+
 ## Contact
 
 ### Please fork to use it and follow me on github.
